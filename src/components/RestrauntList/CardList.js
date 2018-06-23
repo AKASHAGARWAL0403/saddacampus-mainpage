@@ -5,9 +5,9 @@ import "./../../styles/restrauntList.css"
 
 var CardComponent= [];
 export default class CardList extends React.Component{
-    constructor()
+    constructor(props)
     {
-        super();
+        super(props);
     }
     componentWillMount(){
         var TempLink= [];
@@ -29,7 +29,7 @@ export default class CardList extends React.Component{
         FinalLink.push(TempLink);
     
         CardComponent = FinalLink.map((links)=>{
-           return <li key={links}> <CardGroup ImageLink={links}/></li>
+           return <li key={links[0].link}> <CardGroup ImageLink={links} history={this.props.history} /></li>
          })
     }
    render(){

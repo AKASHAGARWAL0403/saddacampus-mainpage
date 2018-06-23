@@ -22,10 +22,6 @@
   {
       "link" : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/f9zfz1aujsdjhtc7zzyi",
       "restrauntName" : "Bar Be Que"
-  }, 
-  { 
-      "link" : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mtnantac3g0nmbz7jr0f",
-      "restrauntName" : "Baba Tiwari"
-  }    
+  } 
 ]
 }
