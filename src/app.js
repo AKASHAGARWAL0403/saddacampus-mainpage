@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Form from "./components/userDetails.js"
-import List from "./components/RestrauntList/CardList"
+import List from "./components/RestrauntList/FinalLayout"
 import Header from "./components/Header"
 import 'bootstrap/dist/css/bootstrap.min.css';
 

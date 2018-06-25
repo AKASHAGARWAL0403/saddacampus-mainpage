@@ -1,5 +1,6 @@
 .container {
    padding-top: 20px;
+
 }
 li {
     list-style-type: none
@@ -10,4 +11,30 @@ li {
 .card-title:hover {
 font-size: 200%;
 cursor: pointer
+}
+#background {
+    background-image: url("https://image.shutterstock.com/image-photo/tomato-basil-sandwiches-ingredients-italian-260nw-326850365.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 6px 8px -6px rgba(0,0,0,.1);
+    position: relative;
+    min-height: 300px;
+    opacity: .8
+}
+.RestrauntHeading{
+    padding-top: 100px;
+    text-align: center
+}
+#Heading {
+    font-size: 40px;
+    font-weight: 300;
+    color: #ea5b31;
+    text-align: center;
+    vertical-align: middle;
+}
+#subHeading {
+    color:#222222;
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
 }
