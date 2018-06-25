@@ -17,17 +17,9 @@ cursor: pointer;
 .card-close:hover{
 cursor: not-allowed    
 }
-#background {
-    background-image: url("https://image.shutterstock.com/image-photo/tomato-basil-sandwiches-ingredients-italian-260nw-326850365.jpg");
-    background-size: cover;
-    background-position: center;
-    box-shadow: inset 0 6px 8px -6px rgba(0,0,0,.1);
-    position: relative;
-    min-height: 300px;
-    opacity: .8
-}
-.RestrauntHeading{
-    padding-top: 100px;
+
+.CollegeName{
+  
     text-align: center
 }
 #Heading {
@@ -55,4 +47,14 @@ cursor: not-allowed
     padding: 5px;
     border-radius: 5px;
 }
+#Restraunt_name{
+    width: 62%;
+}
+.form-group{
+   padding-left: 27%;
+}
+.display-4{
+    text-align: center
+}
+
 

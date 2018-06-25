@@ -9,7 +9,9 @@ export default class CardList extends React.Component{
     {
         super(props);
     }
-    componentWillMount(){
+    CardUpdate = ()=>{
+        if(this.props.ImageLink.ImageLink.length)
+        {
         var TempLink= [];
         var FinalLink= [];
         for(var i=1;i<this.props.ImageLink.ImageLink.length; i++)
@@ -31,8 +33,14 @@ export default class CardList extends React.Component{
         CardComponent = FinalLink.map((links)=>{
            return <li key={links[0].link}> <CardGroup ImageLink={links} history={this.props.history} /></li>
          })
-    }
+     }
+     else{
+         CardComponent = [];
+     }
+}
+    
    render(){
+    this.CardUpdate() ;
         return(
          <Fragment>
          {CardComponent}

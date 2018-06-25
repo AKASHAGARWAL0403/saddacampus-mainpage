@@ -1,15 +1,44 @@
 import React from 'react';
 
-const Background = (props)=>(
-    <div id="background" >
-      <div className="container">
-        <div className="RestrauntHeading">
-          <h1 id="Heading" >You can order from {props.ImageLink.ImageLink.length} restraunts</h1>
-          <h6 id="subHeading" >Ordering food Online</h6>
-       </div> 
-    </div>
+const style = {
+  "fontWeight"  : "400"
+}
+
+class Background extends React.Component{
+
+  constructor(props)
+  {
+    super(props);
+  }
+
+  handleChange = (e)=>{
+    e.preventDefault();
+    var value = e.target.value;
+    console.log(value);
+    this.props.FilterSearch(value)
+  }
+
+  render(){
+    return(
+      <div id="background" >
+      <div className="jumbotron jumbotron-fluid">
+       <div className="container">
+        <h1 className="display-4" style={style} >IIT(ISM)-DHANBAD</h1>
+        <br />
+        <div className ="form-group mx-sm-3 mb-2">
+          <label htmlFor="inputPassword2" className ="sr-only">Password</label>
+            <input type="text" className="form-control" id="Restraunt_name" placeholder="Search Restraunt" onChange={this.handleChange} />
+        </div>
+       
+       </div>
+     </div>
+      
     </div>
 
-)
+    )
+  }
+} 
+
+
 
 export default Background;
