@@ -36,6 +36,10 @@ export default class CardList extends React.Component{
         return(
          <Fragment>
          {CardComponent}
+         <br />
+         <br />
+         <br />
+         <br />
          </Fragment>
         )
     }

@@ -12,9 +12,9 @@ import EmptyCard from "./EmptyCard"
             <div className="container">
             <div className="row">
             <div className="card-deck">
-              { this.props.ImageLink[0] != undefined ? <Card history={this.props.history} imageLink={this.props.ImageLink[0].link} name={this.props.ImageLink[0].restrauntName} /> :  <EmptyCard /> }
-              { this.props.ImageLink[1] != undefined ? <Card history={this.props.history} imageLink={this.props.ImageLink[1].link} name={this.props.ImageLink[1].restrauntName} />:  <EmptyCard /> }
-              { this.props.ImageLink[2] != undefined ? <Card history={this.props.history} imageLink={this.props.ImageLink[2].link} name={this.props.ImageLink[2].restrauntName} />:  <EmptyCard /> }
+              { this.props.ImageLink[0] != undefined ? <Card history={this.props.history} imageLink={this.props.ImageLink[0].link} name={this.props.ImageLink[0].restrauntName} open= {this.props.ImageLink[0].open}/>:  <EmptyCard /> }
+              { this.props.ImageLink[1] != undefined ? <Card history={this.props.history} imageLink={this.props.ImageLink[1].link} name={this.props.ImageLink[1].restrauntName} open= {this.props.ImageLink[1].open}/>:  <EmptyCard /> }
+              { this.props.ImageLink[2] != undefined ? <Card history={this.props.history} imageLink={this.props.ImageLink[2].link} name={this.props.ImageLink[2].restrauntName} open= {this.props.ImageLink[2].open}/>:  <EmptyCard /> }
             </div>
             </div>
             </div>

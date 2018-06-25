@@ -10,7 +10,12 @@ li {
 }
 .card-title:hover {
 font-size: 200%;
-cursor: pointer
+}
+.card-open:hover{
+cursor: pointer;
+}
+.card-close:hover{
+cursor: not-allowed    
 }
 #background {
     background-image: url("https://image.shutterstock.com/image-photo/tomato-basil-sandwiches-ingredients-italian-260nw-326850365.jpg");
@@ -38,3 +43,16 @@ cursor: pointer
     font-weight: 300;
     font-size: 15px;
 }
+.label-open{
+    color: white;
+    background-color: #66CD00;
+    padding: 5px;
+    border-radius: 5px;
+}
+.label-close{
+    color: white;
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+}
+

@@ -1,27 +1,33 @@
 {
   "ImageLink" : [{
       "link" : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/jbutrmcn5i6ghoc8fnek",
-      "restrauntName" : "One.O"
+      "restrauntName" : "One.O",
+      "open" : true
   },
   {
       "link" : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/jaj2dspo6b2pfvflxiap",
-      "restrauntName" : "dominos"
+      "restrauntName" : "dominos",
+      "open" :true
   },
   {
       "link" : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/sfw0dnjfntxzrpeted5x",
-      "restrauntName" : "Shahi Sarbar"
+      "restrauntName" : "Shahi Sarbar",
+      "open" :true
   },
   {
       "link" : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mtnantac3g0nmbz7jr0f",
-      "restrauntName" : "JungleBook"
+      "restrauntName" : "JungleBook",
+      "open" :true
   },
   {
       "link" : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/lovg8fg62jvzhkvbcsl5",
-      "restrauntName" : "Rang Dai Basanti"
+      "restrauntName" : "Rang Dai Basanti",
+      "open" :true
   },
   {
       "link" : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/f9zfz1aujsdjhtc7zzyi",
-      "restrauntName" : "Bar Be Que"
+      "restrauntName" : "Bar Be Que",
+      "open" :false
   } 
 ]
 }
