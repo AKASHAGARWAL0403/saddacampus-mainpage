@@ -21,8 +21,7 @@ class Background extends React.Component{
   render(){
     return(
       <div id="background" >
-      <div className="jumbotron jumbotron-fluid">
-       <div className="container">
+        <div className="container">
         <h1 className="display-4" style={style} >IIT(ISM)-DHANBAD</h1>
         <br />
         <div className ="form-group mx-sm-3 mb-2">
@@ -32,8 +31,6 @@ class Background extends React.Component{
        
        </div>
      </div>
-      
-    </div>
 
     )
   }

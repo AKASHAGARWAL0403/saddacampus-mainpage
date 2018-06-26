@@ -23,8 +23,9 @@ const contentStyle = {
 const Footer = () => (
 	<footer className="footer">
 		<div className="container">
+        <hr style={hrStyle} />
 			<div className="row">
-				<div className="col-lg-3">
+                <div className="col-lg-3">
 					<img className="img-fluid float-left" src="/assets/images/brand/16-9.png" id="logo" />
 				</div>
 				<div className="col-lg-1"></div>

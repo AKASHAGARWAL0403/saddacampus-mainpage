@@ -4,7 +4,14 @@ import { NavLink } from 'react-router-dom';
 
 const style = {
     "width" : "10%",
-    
+}
+const NavItemPadding = {
+	"paddingRight"  : "20px"
+}
+const NavFixed = {
+	"width" : "100%",
+	"position" : "fixed",
+	"z-index" : "99"
 }
 
 export default class Header extends React.Component {
@@ -19,7 +26,7 @@ export default class Header extends React.Component {
 	}
 	render(){
 		return (
-			<div>
+			<div style={NavFixed} >  
 				<Navbar color="light" light expand="lg" className="bg-white border-bottom">
 					<div className="container">
 						<NavbarBrand href="/">
@@ -29,8 +36,11 @@ export default class Header extends React.Component {
 						<NavbarToggler onClick={this.toggle} />
 						<Collapse isOpen={this.state.isOpen} navbar>
 							<Nav className="ml-auto" navbar>
+								<NavItem style={NavItemPadding} >
+                        		<p>Profile    </p>
+								</NavItem>
 								<NavItem>
-                        		<p>Profile Setting</p>
+                        		<p>Setting</p>
 								</NavItem>
 							</Nav>
 						</Collapse>
