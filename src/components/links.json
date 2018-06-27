@@ -1,0 +1,59 @@
+{
+  "categories" : [ { "Category":"BREAD",
+        "ImageLink" : [{
+        "link" : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/jbutrmcn5i6ghoc8fnek",
+        "restrauntName" : "NAAN",
+        "open" : true
+    },
+    {
+        "link" : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/jaj2dspo6b2pfvflxiap",
+        "restrauntName" : "TANDOORI ROTI",
+        "open" :true
+    },
+    {
+        "link" : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/sfw0dnjfntxzrpeted5x",
+        "restrauntName" : "LACHA PARATHA",
+        "open" :true
+    },
+    {
+        "link" : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mtnantac3g0nmbz7jr0f",
+        "restrauntName" : "RUMALI ROTI",
+        "open" :true
+    },
+    {
+        "link" : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/lovg8fg62jvzhkvbcsl5",
+        "restrauntName" : "ALLO PARATHA",
+        "open" :true
+    },
+    {
+        "link" : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/f9zfz1aujsdjhtc7zzyi",
+        "restrauntName" : "CHICKEN PARATHA",
+        "open" :false
+    } 
+  ]
+  } ,
+  {
+  "Category" : "Drinks",
+    "ImageLink" : [{
+        "link" : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/jbutrmcn5i6ghoc8fnek",
+        "restrauntName" : "COKE",
+        "open" : true
+    },
+    {
+        "link" : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/jaj2dspo6b2pfvflxiap",
+        "restrauntName" : "VIRGIN MOJITO",
+        "open" :true
+    },
+    {
+        "link" : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/sfw0dnjfntxzrpeted5x",
+        "restrauntName" : "COLD COFFEE",
+        "open" :true
+    },
+    {
+        "link" : "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mtnantac3g0nmbz7jr0f",
+        "restrauntName" : "ICED TEA",
+        "open" :true
+    }
+  ]
+  }]
+}

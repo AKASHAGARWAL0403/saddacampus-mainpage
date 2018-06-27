@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom';
 import Loadable from "react-loadable";
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Form from "./components/userDetails.js"
-import List from "./components/RestrauntList/FinalLayout"
+import List from "./components/RestrauntList/index"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 function Loading({ error }) {
     if (error) {
       return <div>Error!</div>;

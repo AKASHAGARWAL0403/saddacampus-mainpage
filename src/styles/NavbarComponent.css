@@ -27,7 +27,9 @@
 	content: '\e117';
 }
 
-
+#parent_ {
+	padding-top: 145px;
+}
 /* Menu styles */
 
 .menu {
@@ -331,8 +333,11 @@
 @media (max-width: 644px)
 {
 .container {
-    max-width: 740px;
-}
+	max-width: 740px;
+	}
+#parent_{
+	padding-top: 170px;
+}	
 .action--open{
 	padding-top: 100px;
 }
@@ -340,7 +345,10 @@
 @media (max-width: 767px) and (min-width : 644px)
 {
 .container {
-    max-width: 740px;
+	max-width: 740px;
+}
+#parent_{
+	padding-top: 165px;
 }
 }
 @media screen and (max-width: 991px) and (min-width : 701px) {
@@ -368,6 +376,9 @@
 	}
 	.container{
 		max-width: 900px;
+	}
+	#parent_{
+		padding-top: 150px;
 	}
 }
 

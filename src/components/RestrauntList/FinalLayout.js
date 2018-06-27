@@ -2,26 +2,29 @@ import React, { Fragment } from "react";
 import List from "./CardList";
 import Restraunt from "./restrauntBackground"
 import "./../../styles/restrauntList.css"
-import ImageLink from "./ImageLink.json"
+
+var ImageLink=[];
 class Layout extends React.Component{
     
     constructor(props)
     {
         super(props);
         this.state= {
-            ImageLink : ImageLink,
-            aka : "aa"
-        }
+            ImageLink : this.props.ImageLink
+          }
     }
 
-     SeachBarResult = (value)=>{
+    componentWillMount(){
+       ImageLink = this.props.ImageLink;
+    }
+
+    SeachBarResult = (value)=>{
       var Result = ImageLink.ImageLink.filter((res)=>{
              return (res.restrauntName.toLowerCase().indexOf(value.toLowerCase())>=0)
          });
          this.setState(()=>({
              ImageLink : { "ImageLink" : Result},
-             aka : "Aaaaaa"
-         }))
+        }))
          
          console.log(Result);
      }
