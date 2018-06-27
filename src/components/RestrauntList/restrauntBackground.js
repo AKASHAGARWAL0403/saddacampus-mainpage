@@ -3,6 +3,9 @@ import React from 'react';
 const style = {
   "fontWeight"  : "400"
 }
+const Padding = { 
+  "paddingTop" : "100px"
+}
 
 class Background extends React.Component{
 
@@ -20,7 +23,7 @@ class Background extends React.Component{
 
   render(){
     return(
-      <div id="background" >
+      <div id="background" style={Padding} >
         <div className="container">
         <h1 className="display-4" style={style} >IIT(ISM)-DHANBAD</h1>
         <br />
