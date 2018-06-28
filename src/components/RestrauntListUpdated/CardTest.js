@@ -4,7 +4,7 @@ import {faStar} from "@fortawesome/fontawesome-free-solid"
 var style={
     "width" : "250px",
     "float" : "left",
-    "margin" : "15px",
+    "padding" : "15px",
     "border" : "0"
 }
 
