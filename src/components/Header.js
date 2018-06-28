@@ -27,7 +27,7 @@ export default class Header extends React.Component {
 	render(){
 		return (
 			<div style={NavFixed} >  
-				<Navbar color="light" light expand="lg" className="bg-white border-bottom">
+				<Navbar color="light" light expand="lg" className="bg-white ">
 					<div className="container">
 						<NavbarBrand href="/">
 							<img src="/assets/images/brand/16-9.png" style={style} className="d-inline-block align-top" alt="" />
