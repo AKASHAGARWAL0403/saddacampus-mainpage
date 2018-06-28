@@ -11,7 +11,7 @@ const NavItemPadding = {
 const NavFixed = {
 	"width" : "100%",
 	"position" : "fixed",
-	"z-index" : "99"
+	"zIndex" : "99"
 }
 
 export default class Header extends React.Component {

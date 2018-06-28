@@ -23,7 +23,11 @@ import EmptyCard from "./EmptyCard"
             { this.props.ImageLink[2] != undefined ? <Card history={this.props.history}
 				imageLink={this.props.ImageLink[2].link} 
 				name={this.props.ImageLink[2].restrauntName} 
-				open= {this.props.ImageLink[2].open}/>:  <EmptyCard /> }
+                open= {this.props.ImageLink[2].open}/>:  <EmptyCard /> }
+            { this.props.ImageLink[3] != undefined ? <Card history={this.props.history}
+				imageLink={this.props.ImageLink[3].link} 
+				name={this.props.ImageLink[3].restrauntName} 
+				open= {this.props.ImageLink[3].open}/>:  <EmptyCard /> }    
             </div>
             </div>
             </div>

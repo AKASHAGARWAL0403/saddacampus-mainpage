@@ -16,7 +16,7 @@ export default class CardList extends React.Component{
         var FinalLink= [];
         for(var i=1;i<this.props.ImageLink.ImageLink.length; i++)
         {
-            if(i%3 != 0)
+            if(i%4 != 0)
             {
              TempLink.push(this.props.ImageLink.ImageLink[i-1]);
             }
