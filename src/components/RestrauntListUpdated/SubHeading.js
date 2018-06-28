@@ -48,7 +48,7 @@ export default class SubHeading extends React.Component{
             <div className="row">
             <div style={divWidth} ><div className="collegeName" >IIT(ISM) DHANBAD  <hr id="hr" /></div></div>
              <div className="Filters">
-             <span>Restraunts</span>
+             <span>Restaurants</span>
             <ButtonDropdown isOpen={this.state.isOpen} toggle={this.toggle} className="buttongroup" >
             <Button id="caret" color="primary" className="dropdownButton"style={style} >{this.state.selectedValue}</Button>
             <DropdownToggle caret color="primary" style={style} className="dropdownArrow" />

@@ -50,7 +50,7 @@ export default class Header extends React.Component {
 					<div className="container">
 						<NavbarBrand href="/">
 							<img src="/assets/images/brand/16-9.png" style={style} className="d-inline-block align-top" alt="" />
-							&nbsp; Saddacampus
+							&nbsp; Food delivery
 						</NavbarBrand>
 						<NavbarToggler onClick={this.toggle} />
 						<Collapse isOpen={this.state.isOpen} navbar>
@@ -61,10 +61,10 @@ export default class Header extends React.Component {
 								<NavItem  style={positionSettings} >
 									<ButtonDropdown isOpen={this.state.isOpen2} toggle={this.toggle_} className="buttongroup">
 									<DropdownToggle style={styleSetting} >
-									<FontAwesomeIcon icon={faCog} />
+									<img src="/assets/images/icon_setting.png" className="settingIcon" />
 									</DropdownToggle>
 									<DropdownMenu>
-										<DropdownItem>Edit Profile</DropdownItem>
+										<DropdownItem >Edit Profile</DropdownItem>
 										<DropdownItem >My Orders</DropdownItem>
 										<DropdownItem divider className="divider"  ></DropdownItem>
 										<DropdownItem>Contact Us</DropdownItem>

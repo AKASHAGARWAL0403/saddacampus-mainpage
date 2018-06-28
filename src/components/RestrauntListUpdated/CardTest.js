@@ -14,7 +14,8 @@ var CardBody = {
 }
 
 var Image = {
-    "borderRadius" : "0"
+    "borderRadius" : "0",
+    "height" : "140px"
 }
 
 var Span = { 
@@ -32,8 +33,8 @@ const Card = (props)=>(
     <div className="card-body" style={CardBody} >
     <h5 className={"card-title "+ ( props.open?"card-open":"card-close")}  title={props.open?"Click to order":"Sorry restraunt is closed"} style={Heading} >{props.name}</h5>
     <span style={Span} className="subHeading" >BurgerWings</span>
-    <div className="rating"><img src="/assets/images/star-16.jpg" className="starImage" /> <span className="ratingText"> 4.5</span></div>
-    <span className="InfoPart">Min Order-: 200</span>
+    <div className="rating"><img src="/assets/images/ic_star_24px.png" className="starImage" /> <span className="ratingText"> 4.5</span></div>
+    <span className="InfoPart">Min Order-: 200 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Free delivery</span>
   </div>
    </div>
 )

@@ -11,7 +11,9 @@
     opacity: .8;
     position: relative;
     left:2px;
+    bottom: 1px;
     font-family: 'Roboto', sans-serif;
+    font-size: 12px
 }
 .InfoPart{
     font-size: 12px;
@@ -21,7 +23,7 @@
     font-family: 'Roboto', sans-serif;
 }
 .starImage{
-    width: 20px;
+    width: 17px;
     position: relative;
     bottom: 3px;
 }
@@ -55,6 +57,7 @@
 .Filters{
     position: relative;
     bottom: 15px;
+    font-size: 20px;
 }
 .buttongroup{
     bottom: 2px;
@@ -75,6 +78,9 @@
 }
 .dropdownItems:hover{
     color: #707070;
+}
+.settingIcon{
+    width: 18px;
 }
 
 
