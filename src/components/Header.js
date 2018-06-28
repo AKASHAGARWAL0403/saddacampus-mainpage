@@ -25,9 +25,6 @@ var positionSettings = {
 	"position":"relative",
 	"bottom":"4px"
 }
-
-
-
 export default class Header extends React.Component {
 	constructor(){
 		super();
@@ -48,7 +45,7 @@ export default class Header extends React.Component {
 			<div style={NavFixed} >  
 				<Navbar color="light" light expand="lg" className="bg-white ">
 					<div className="container">
-						<NavbarBrand href="/">
+						<NavbarBrand href="/" className="logoName" >
 							<img src="/assets/images/brand/16-9.png" style={style} className="d-inline-block align-top" alt="" />
 							&nbsp; Food delivery
 						</NavbarBrand>
