@@ -1,6 +1,8 @@
 import React from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem ,  ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem , Button } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import {faCog} from "@fortawesome/fontawesome-free-solid"
 
 const style = {
     "width" : "10%",
@@ -13,15 +15,32 @@ const NavFixed = {
 	"position" : "fixed",
 	"zIndex" : "99"
 }
+var styleSetting = {
+    "backgroundColor" : "white" ,
+    "border" : "none",
+    "color": "black",
+    "boxShadow"  :"none"
+}
+var positionSettings = {
+	"position":"relative",
+	"bottom":"4px"
+}
+
+
 
 export default class Header extends React.Component {
 	constructor(){
 		super();
-		this.state = { isOpen: false };
+		this.state = { isOpen: false , isOpen2 : false };
 	}
 	toggle = () => {
 		this.setState({
 			isOpen: !this.state.isOpen
+		});
+	}
+	toggle_ = () => {
+		this.setState({
+			isOpen2 : !this.state.isOpen2
 		});
 	}
 	render(){
@@ -39,8 +58,21 @@ export default class Header extends React.Component {
 								<NavItem style={NavItemPadding} >
                         		<p>Profile    </p>
 								</NavItem>
-								<NavItem>
-                        		<p>Setting</p>
+								<NavItem  style={positionSettings} >
+									<ButtonDropdown isOpen={this.state.isOpen2} toggle={this.toggle_} className="buttongroup">
+									<DropdownToggle style={styleSetting} >
+									<FontAwesomeIcon icon={faCog} />
+									</DropdownToggle>
+									<DropdownMenu>
+										<DropdownItem>Edit Profile</DropdownItem>
+										<DropdownItem >My Orders</DropdownItem>
+										<DropdownItem divider className="divider"  ></DropdownItem>
+										<DropdownItem>Contact Us</DropdownItem>
+										<DropdownItem>Privacy Policy</DropdownItem>
+										<DropdownItem divider className="divider"  ></DropdownItem>
+										<DropdownItem>Log out</DropdownItem>
+									</DropdownMenu>
+									</ButtonDropdown>
 								</NavItem>
 							</Nav>
 						</Collapse>

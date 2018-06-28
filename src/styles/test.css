@@ -11,12 +11,14 @@
     opacity: .8;
     position: relative;
     left:2px;
+    font-family: 'Roboto', sans-serif;
 }
 .InfoPart{
-    font-size: 10px;
+    font-size: 12px;
     position: relative;
     bottom: 12px;
-    opacity: .5
+    opacity: .5;
+    font-family: 'Roboto', sans-serif;
 }
 .starImage{
     width: 20px;
@@ -24,10 +26,11 @@
     bottom: 3px;
 }
 .subHeading{
-    fontSize: 10px;
+    font-size: 10px;
     position: relative;
     bottom : 8px;
     left: 1px;
+    font-family: 'Roboto', sans-serif;;
     opacity: .7
 }
 .Heading{
@@ -44,9 +47,9 @@
 #hr{
     position: relative;
     bottom: 14px;
-    background-color: black;
+    background-color: #707070;
     margin-left: 0px;
-    width: 140px
+    width: 150px
  
 }
 .Filters{
@@ -62,7 +65,17 @@
     position: relative;
     top: 1px;
  }
-
+ .divider{
+    width: 60%;
+    border-color: #707070;
+    margin-left: 35px;
+ }
+.dropdownItems{
+    color: black
+}
+.dropdownItems:hover{
+    color: #707070;
+}
 
 
 @media screen and (max-width: 1199px) and (min-width : 657px) {

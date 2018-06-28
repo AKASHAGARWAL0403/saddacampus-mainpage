@@ -18,7 +18,7 @@ var Image = {
 }
 
 var Span = { 
-    "fontSize": "10px",
+    "fontSize": "12px",
     "position": "relative",
     "bottom": "8px",
     "left": "1px"

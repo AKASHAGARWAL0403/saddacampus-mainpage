@@ -10,6 +10,12 @@ var style = {
     "color": "black",
     "boxShadow"  :"none"
 }
+var Selected={
+    "color": "#707070"
+}
+var NotSelected = {
+    "color": "black"
+}
 
 
 export default class SubHeading extends React.Component{
@@ -18,8 +24,16 @@ export default class SubHeading extends React.Component{
     
         this.toggle = this.toggle.bind(this);
         this.state = {
-          isOpen: false
+          isOpen: false,
+          selectedValue : "All"
         };
+      }
+
+      selectDropdown = (e)=>{
+         const value  = e.target.innerHTML;
+         this.setState(()=>({
+             selectedValue : value
+         }))
       }
     
       toggle = ()=>{
@@ -36,13 +50,13 @@ export default class SubHeading extends React.Component{
              <div className="Filters">
              <span>Restraunts</span>
             <ButtonDropdown isOpen={this.state.isOpen} toggle={this.toggle} className="buttongroup" >
-            <Button id="caret" color="primary" className="dropdownButton"style={style} >All(7)</Button>
+            <Button id="caret" color="primary" className="dropdownButton"style={style} >{this.state.selectedValue}</Button>
             <DropdownToggle caret color="primary" style={style} className="dropdownArrow" />
-            <DropdownMenu>
-                <DropdownItem>All</DropdownItem>
-                <DropdownItem >Free Delivery</DropdownItem>
-                <DropdownItem>Sort By Rating</DropdownItem>
-                <DropdownItem>Sort By Min.Order</DropdownItem>
+            <DropdownMenu onClick={this.selectDropdown} >
+                <DropdownItem className="dropdownItems" style={this.state.selectedValue=="All"?Selected : NotSelected } >All</DropdownItem>
+                <DropdownItem className="dropdownItems" style={this.state.selectedValue=="Free Delivery"?Selected : NotSelected } >Free Delivery</DropdownItem>
+                <DropdownItem className="dropdownItems" style={this.state.selectedValue=="Sort By Rating"?Selected : NotSelected } >Sort By Rating</DropdownItem>
+                <DropdownItem className="dropdownItems" style={this.state.selectedValue=="Sort By Min.Order"?Selected : NotSelected } >Sort By Min.Order</DropdownItem>
             </DropdownMenu>
             </ButtonDropdown>
              </div>
