@@ -1,16 +1,17 @@
 import React from "react";
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import {faStar} from "@fortawesome/fontawesome-free-solid"
+
 var style={
     "width" : "250px",
     "float" : "left",
-    "padding" : "15px",
+    "padding" : "7.5px",
+    "margin"  : "7.5px",
     "border" : "0"
 }
 
 var CardBody = {
     "paddingTop": "5px",
     "paddingLeft": "5px",
+    "paddingBottom"  : "1px"
 }
 
 var Image = {
@@ -34,7 +35,7 @@ const Card = (props)=>(
     <h5 className={"card-title "+ ( props.open?"card-open":"card-close")}  title={props.open?"Click to order":"Sorry restraunt is closed"} style={Heading} >{props.name}</h5>
     <span style={Span} className="subHeading" >BurgerWings</span>
     <div className="rating"><img src="/assets/images/ic_star_24px.png" className="starImage" /> <span className="ratingText"> 4.5</span></div>
-    <span className="InfoPart">Min Order-: 200 &nbsp; &nbsp; &nbsp; &nbsp; <img src="/assets/images/dot.jpeg" className="dot" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Free delivery</span>
+    <span className="InfoPart">Min Order-: 200 &nbsp; &nbsp; &nbsp; <img src="/assets/images/dot.jpeg" className="dot" /> &nbsp; &nbsp; &nbsp; Free delivery</span>
   </div>
    </div>
 )
